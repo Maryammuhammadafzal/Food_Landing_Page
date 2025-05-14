@@ -17,7 +17,7 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="w-full h-auto  py-8 font-['Jost']">
+    <header className="w-full h-auto max-md:pt-5 max-md:py-0 py-8 font-['Jost']">
       <div className="w-[80%] mx-auto max-lg:w-full max-lg:px-3  h-auto flex justify-between items-center ">
         {/* Logo */}
         <div className="logo ">

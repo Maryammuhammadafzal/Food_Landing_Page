@@ -2,7 +2,7 @@ import React from "react";
 import AboutImage1 from "../assets/choose-us-image.png";
 import SubHeading from "../components/subHeading";
 import Heading from "../components/Heading";
-import AboutCard from "../components/AboutCard";
+
 const ChooseUs = () => {
   const choose_data = [
     {
@@ -22,7 +22,7 @@ const ChooseUs = () => {
     },
   ];
   return (
-    <div className="w-full h-screen font-['Jost'] flex  justify-end overflow-hidden relative">
+    <div className="w-full min-md:h-screen max-md:h-auto max-md:py-3 font-['Jost'] flex  justify-end overflow-hidden relative">
       <div className="leftImage max-md:hidden w-auto max-lg:w-[45%] h-full absolute top-0 -left-0">
         <img
           src={AboutImage1}
@@ -45,7 +45,7 @@ const ChooseUs = () => {
         <div className="point w-full flex flex-col justify-center items-start gap-5 pl-5">
           <ul className="w-[80%] pl-2 space-y-10">
             {choose_data.map(({ title, description }) => (
-              <li key={title} className="text-xl max-sm:text-lg list-disc">
+              <li key={title} className="text-xl max-sm:text-[16px] list-disc">
                 <span className="text-black font-semibold pr-2">
                   {title}
                 </span>

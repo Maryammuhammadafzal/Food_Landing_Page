@@ -43,81 +43,80 @@ const NewsCard = () => {
             showStatus={false}
             showIndicators={true}
             infiniteLoop={true}
-            className="w-full  h-auto"
+            className="w-full h-auto"
           >
-            <div className="popular-card group w-[400px] h-full mx-auto rounded-lg overflow-hidden relative font-['Jost']">
+            <div className="popular-card group w-[300px]  h-auto mx-auto rounded-lg overflow-hidden relative font-['Jost']">
               {/* Image Container */}
-              <div className="relative w-[250px] h-full">
+              
                 <img
                   src={CardImage1}
                   alt="card"
-                  className="w-[400px] h-full object-cover"
+                  className="w-[400px] h-[400px] rounded-xl  object-cover"
                 />
                
-              </div>
+              
 
               {/* Content */}
-              <div className="absolute inset-0 z-20 flex flex-col justify-end pb-10 pl-3 pr-6 text-white">
+              <div className="absolute  z-20 flex flex-col justify-end  bottom-15 text-white">
                 <h3 className="text-lg font-bold">Truffle Mushroom Risotto"</h3>
                 <p className="text-sm">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit}
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit
                 </p>
               </div>
             </div>
-            <div className="popular-card group w-[400px] h-full mx-auto rounded-lg overflow-hidden relative font-['Jost']">
+            <div className="popular-card group w-[300px] h-auto mx-auto rounded-lg overflow-hidden relative font-['Jost']">
               {/* Image Container */}
-              <div className="relative w-[250px] h-full">
+             
                 <img
                   src={CardImage1}
                   alt="card"
-                  className="w-[400px] h-full object-cover"
+                  className="w-[400px] h-[400px] rounded-xl object-cover"
                 />
                
-              </div>
+             
 
               {/* Content */}
               <div className="absolute inset-0 z-20 flex flex-col justify-end pb-10 pl-3 pr-6 text-white">
                 <h3 className="text-lg font-bold">Truffle Mushroom Risotto"</h3>
                 <p className="text-sm">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit}
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit
                 </p>
               </div>
             </div>
-            <div className="popular-card group w-[400px] h-full mx-auto rounded-lg overflow-hidden relative font-['Jost']">
+            <div className="popular-card group w-[300px] h-auto mx-auto rounded-lg overflow-hidden relative font-['Jost']">
               {/* Image Container */}
-              <div className="relative w-[250px] h-full">
+              
                 <img
                   src={CardImage1}
                   alt="card"
-                  className="w-[400px] h-full object-cover"
+                  className="w-[400px] h-[400px] rounded-xl object-cover"
                 />
                
-              </div>
+             
 
               {/* Content */}
               <div className="absolute inset-0 z-20 flex flex-col justify-end pb-10 pl-3 pr-6 text-white">
                 <h3 className="text-lg font-bold">Truffle Mushroom Risotto"</h3>
                 <p className="text-sm">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit}
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit
                 </p>
               </div>
             </div>
-            <div className="popular-card group w-[400px] h-full mx-auto rounded-lg overflow-hidden relative font-['Jost']">
+            <div className="popular-card group w-[300px] h-auto mx-auto rounded-lg overflow-hidden relative font-['Jost']">
               {/* Image Container */}
-              <div className="relative w-[250px] h-full">
+          
                 <img
                   src={CardImage1}
                   alt="card"
-                  className="w-[400px] h-full object-cover"
+                  className="w-[400px] h-[400px] rounded-xl object-cover"
                 />
-               
-              </div>
+          
 
               {/* Content */}
               <div className="absolute inset-0 z-20 flex flex-col justify-end pb-10 pl-3 pr-6 text-white">
                 <h3 className="text-lg font-bold">Truffle Mushroom Risotto"</h3>
                 <p className="text-sm">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit}
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit
                 </p>
               </div>
             </div>

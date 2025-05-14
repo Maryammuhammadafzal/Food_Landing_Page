@@ -45,7 +45,7 @@ const PopularCards = () => {
             infiniteLoop={true}
             className="w-full  h-auto"
           >
-            <div className="popular-card group w-[270px] h-[320px] mx-auto rounded-lg overflow-hidden relative font-['Jost']">
+            <div className="popular-card group w-[270px] h-[320px] mb-4 mx-auto rounded-lg overflow-hidden relative font-['Jost']">
               {/* Image Container */}
               <div className="relative w-[250px] h-[300px]">
                 <img

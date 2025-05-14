@@ -6,3 +6,11 @@
         background-position: center;
         background-size: cover;
 }
+
+.carousel-root .carousel {
+        display: none;
+}
+
+.carousel-root .carousel-slider {
+        display: block;
+}

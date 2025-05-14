@@ -29,15 +29,15 @@ const AboutCard = () => {
   return (
     <>
       {about_card_data.map(({ card_title, card_description }) => (
-        <div className="popular-card  w-[280px] max-md:w-[220px] py-3 h-auto flex gap-4 font-['Jost']">
+        <div className="popular-card  w-[280px] max-md:w-[220px] max-sm:w-[160px] py-3 h-auto flex gap-4 max-sm:gap-1 font-['Jost']">
          
-                 <MdFastfood  size={60} className="text-orange-500 max-md:w-[40px]" />
+                 <MdFastfood  size={60} className="text-orange-500 max-md:w-[40px] max-sm:w-[30px]" />
          
 
           {/* Content */}
           <div className="flex flex-col w-full justify-end">
-            <h3 className="text-lg text-red-700 font-semibold">{card_title}</h3>
-            <p className="text-xs w-full">{card_description}</p>
+            <h3 className="text-lg text-red-700 font-semibold max-sm:text-[14px]">{card_title}</h3>
+            <p className="text-xs w-full max-sm:text-[10px]">{card_description}</p>
           </div>
         </div>
       ))}

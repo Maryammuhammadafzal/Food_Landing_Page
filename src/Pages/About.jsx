@@ -6,7 +6,7 @@ import Heading from "../components/Heading";
 import AboutCard from "../components/AboutCard";
 const About = () => {
   return (
-    <div className="w-full h-auto py-8 font-['Jost'] overflow-hidden relative">
+    <div className="w-full h-auto py-8 max-md:py-3 font-['Jost'] overflow-hidden relative">
       <div className="leftImage w-fit h-full absolute top-0 -left-0">
         <img
           src={AboutImage1}
@@ -14,12 +14,12 @@ const About = () => {
           className="w-auto h-auto rounded-50 object-cover max-[1240px]:hidden"
         />
       </div>
-      <div className="w-[50%] max-[1240px]:w-[80%] max-lg:w-[90%] max-[800px]:w-full mx-auto max-[800px]:mx-0 max-lg:px-3  h-auto flex flex-col justify-between items-center">
+      <div className="w-[50%] max-[1240px]:w-[80%] max-lg:w-[90%] max-[800px]:w-full mx-auto max-[800px]:mx-0 max-lg:px-3 max-sm:px-0 max-sm:w-full h-auto flex flex-col justify-between items-center">
         {/* Heading */}
         <div className="popular-heading flex justify-center items-center text-center flex-col">
           <SubHeading text="About Us" />
           <Heading text="A Passion for Culinary Excellence" />
-          <p className="py-8 max-lg:px-3 max-lg:text-md max-sm:text-sm text-center text-lg max-md:text-[16px]">
+          <p className="py-8 px-15 max-lg:px-3 max-lg:text-md max-md:text-sm text-center text-lg">
             At [Your Brand Name], we believe that food is more than just
             sustenance; it’s an experience. We bring you a carefully crafted
             menu, designed to tantalize your taste buds and satisfy your
@@ -28,7 +28,7 @@ const About = () => {
           </p>
         </div>
 
-        <div className="card w-full max-[1240px]:w-[75%] max-lg:w-[90%] max-[800px]:w-full flex flex-wrap justify-center max-sm:justify-start items-center gap-5 space-x-3 max-[800px]:space-x-1">
+        <div className="card w-full max-[1240px]:w-[75%] max-lg:w-[90%] max-[800px]:w-full flex flex-wrap justify-center items-center gap-5 max-sm:w-full max-sm:px-1 space-x-3 max-[800px]:space-x-1">
           <AboutCard />
         </div>
       </div>
