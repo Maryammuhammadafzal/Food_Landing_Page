@@ -1,6 +1,5 @@
 import React from "react";
 import Button from "../components/Button";
-import TestimonialImage from "../assets/testimonial-image.png";
 import TestimonialCard from "../components/TestimonialCard";
 
 const Testimonial = () => {

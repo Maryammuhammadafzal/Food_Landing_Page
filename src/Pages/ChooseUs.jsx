@@ -1,6 +1,6 @@
 import React from "react";
 import AboutImage1 from "../assets/choose-us-image.png";
-import SubHeading from "../components/subHeading";
+import SubHeading from "../components/SubHeading";
 import Heading from "../components/Heading";
 
 const ChooseUs = () => {

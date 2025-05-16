@@ -1,5 +1,5 @@
 import React from "react";
-import SubHeading from "../components/subHeading.jsx";
+import SubHeading from "../components/SubHeading.jsx";
 import Heading from "../components/Heading.jsx";
 import NewsCard from "../components/NewsCard.jsx";
 

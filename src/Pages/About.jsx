@@ -1,7 +1,7 @@
 import React from "react";
 import AboutImage1 from "../assets/about-image1.png";
 import AboutImage2 from "../assets/about-image2.png";
-import SubHeading from "../components/subHeading";
+import SubHeading from "../components/SubHeading";
 import Heading from "../components/Heading";
 import AboutCard from "../components/AboutCard";
 const About = () => {

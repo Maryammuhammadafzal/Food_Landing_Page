@@ -1,5 +1,5 @@
 import React from "react";
-import SubHeading from "../components/subHeading";
+import SubHeading from "../components/SubHeading";
 import Heading from "../components/Heading";
 import MenuCard from "../components/MenuCard";
 
