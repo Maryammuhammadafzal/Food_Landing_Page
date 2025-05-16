@@ -8,13 +8,13 @@ const News = () => {
     <div className="w-full h-auto  py-8 font-['Jost'] overflow-hidden">
       <div className="w-[80%] mx-auto max-lg:w-full max-lg:px-3  h-auto flex flex-col justify-between items-center">
         {/* Heading */}
-        <div className=";-heading flex w-full justify-center items-center flex-col">
+        <div className=";-heading flex w-full text-center justify-center items-center flex-col">
           <SubHeading text="Latest Food News" />
           <Heading text="Stay Updated with the Latest Food Trends & News" />
         </div>
 
         {/* Cards */}
-        <div className="cards w-full justify-center gap-4 flex items-center min-h-[500px] py-10 h-auto max-lg:flex-wrap">
+        <div className="cards w-full justify-center gap-4 space-y-5 flex items-center py-10 h-auto max-[1200px]:flex-wrap">
                 <NewsCard/>
         </div>
       </div>

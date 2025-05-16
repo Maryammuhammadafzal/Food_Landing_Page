@@ -1,10 +1,11 @@
 import React from "react";
 import Button from "../components/Button";
 import TestimonialImage from "../assets/testimonial-image.png";
+import TestimonialCard from "../components/TestimonialCard";
 
 const Testimonial = () => {
   return (
-    <div className="w-full h-screen flex items-center text-white">
+    <div className="w-full h-screen max-xl:h-auto max-xl:py-3 flex items-center text-white">
       <div className="w-full  h-auto  max-md:h-auto bg-image">
 
         <div className="content w-full p-5 max-md:gap-8 flex max-md:flex-col justify-between items-center h-full">
@@ -19,8 +20,8 @@ const Testimonial = () => {
           </div>
           </div>
           {/* Image */}
-          <div className="rightimg  w-[50%] p-5 max-md:w-full h-auto flex justify-start max-md:justify-center items-center">
-          <img src={TestimonialImage} alt="food deal" className="w-auto h-auto max-md:h-[350px] max-md:w-auto" />
+          <div className="rightimg  w-[50%] p-5 max-md:w-full h-auto  flex justify-start max-md:justify-center items-center">
+          <TestimonialCard/>
           </div>
         </div>
       </div>

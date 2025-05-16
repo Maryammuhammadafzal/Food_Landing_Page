@@ -22,7 +22,7 @@ const ChooseUs = () => {
     },
   ];
   return (
-    <div className="w-full min-md:h-screen max-md:h-auto max-md:py-3 font-['Jost'] flex  justify-end overflow-hidden relative">
+    <div className="w-full h-screen max-xl:h-auto max-xl:py-40 max-lg:py-30 max-sm:py-6 font-['Jost'] flex  justify-end overflow-hidden relative">
       <div className="leftImage max-md:hidden w-auto max-lg:w-[45%] h-full absolute top-0 -left-0">
         <img
           src={AboutImage1}
@@ -30,7 +30,7 @@ const ChooseUs = () => {
           className="w-auto h-auto rounded-50 object-cover "
         />
       </div>
-      <div className="w-[60%] max-md:w-full max-lg:w-[55%] max-lg:px-3 gap-10 max-sm:pl-1  h-auto flex flex-col justify-center items-start">
+      <div className="w-[60%] max-md:w-full max-xl:w-[55%] max-lg:px-3 gap-10 max-sm:pl-1  h-auto flex flex-col justify-center items-start">
         {/* Heading */}
         <div className="popular-heading flex justify-center flex-col ">
           <div className="flex gap-2">

@@ -1,8 +1,9 @@
 import React from "react";
 import Button from "../components/Button";
-import Popular from "./POpular";
+import Popular from "./Popular";
 import About from "./About";
 import Deal from "./Deal";
+import Menu from "./Menu";
 import ChooseUs from "./ChooseUs";
 import Testimonial from "./Testimonial";
 import News from "./News";
@@ -11,8 +12,8 @@ import Contact from "./Contact";
 const Home = () => {
   return (
     <>
-      <div className="w-full h-auto max-md:py-3 py-8 font-['Jost']">
-        <div className="w-[65%] max-[1180px]:w-[75%] mx-auto max-lg:w-[90%] max-md:w-full  max-lg:px-3 h-[75vh] max-sm:h-[65vh] flex flex-col justify-center items-center ">
+      <div className="w-full h-auto max-xl:py-3  py-8 font-['Jost']">
+        <div className="w-[65%] max-[1180px]:w-[75%] mx-auto max-lg:w-[90%] max-md:w-full  max-lg:px-3 h-[75vh] max-sm:h-[65vh] max-xl:h-[60vh] flex flex-col justify-center items-center ">
           <h1 className="text-6xl font-medium text-[#9B1B30] max-[880px]:text-5xl  text-center font-['Lobster'] max-[380px]:text-3xl">
             Welcome to [Your Brand Name] Where Every Bite is a Delight!
           </h1>
@@ -29,6 +30,7 @@ const Home = () => {
       <Popular />
       <About />
       <Deal />
+      <Menu />
       <ChooseUs />
       <Testimonial />
       <News />

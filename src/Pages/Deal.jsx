@@ -4,7 +4,7 @@ import DealImage from "../assets/dealImage.png";
 
 const Deal = () => {
   return (
-    <div className="w-full h-screen flex items-center text-white">
+    <div className="w-full h-screen max-xl:h-auto max-xl:py-3 flex items-center text-white">
       <div className="w-full bg-gradient-to-tl h-[450px] max-lg:h-[400px] max-md:h-auto from-orange-400  to-red-700">
 
         <div className="content w-full p-6 max-md:gap-8 flex max-md:flex-col justify-between items-center h-full">
