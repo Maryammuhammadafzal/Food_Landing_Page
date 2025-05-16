@@ -6,7 +6,7 @@ import Heading from "../components/Heading";
 import AboutCard from "../components/AboutCard";
 const About = () => {
   return (
-    <div className="w-full h-auto py-8 max-md:py-3 font-['Jost'] overflow-hidden relative">
+    <div className="w-full h-auto py-8 max-md:py-3 min-xl:py-20 font-['Jost'] overflow-hidden relative">
       <div className="leftImage w-fit h-full absolute top-0 -left-0">
         <img
           src={AboutImage1}
