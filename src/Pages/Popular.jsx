@@ -1,7 +1,7 @@
 import React from "react";
-import SubHeading from "../components/subHeading.jsx";
 import Heading from "../components/Heading.jsx";
 import PopularCards from "../components/PopularCards.jsx";
+import SubHeading from "../components/subHeading.jsx";
 
 const Popular = () => {
   return (
