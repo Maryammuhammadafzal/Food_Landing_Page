@@ -1,5 +1,4 @@
 import React from "react";
-import SubHeading from "./subHeading";
 import { FaArrowRightLong } from "react-icons/fa6";
 const Footer = () => {
   let contact_data = [
