@@ -1,11 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FaStar } from "react-icons/fa";
 import userImage1 from "../assets/user-image1.png"
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const TestimonialCard = () => {
+  useEffect(() => {
+  AOS.init({
+    duration: 1000,
+    once: true, // Only animate once
+  });
+}, []);
   return (
     <div className="w-[350px] h-[350px] flex justify-center items-center max-sm:pl-12 max-sm:mx-auto">
       <div className="w-auto h-auto flex justify-center items-center relative">
-        <div className="orange_card w-[300px] h-[300px] rounded-2xl bg-orange-500 absolute top-10 right-10 "></div>
+        <div data-aos="fade-down-left" className="orange_card w-[300px] h-[300px] rounded-2xl bg-orange-500  absolute top-10 right-10 "></div>
         <div className="white_card w-[300px] h-[300px] rounded-2xl bg-white z-10">
           <div className="content w-full h-full flex justify-center items-center gap-3 p-6 text-black flex-col">
             <h2 className="customer_name text-3xl font-['Lobster']">
@@ -35,7 +43,7 @@ const TestimonialCard = () => {
           </div>
         </div>
         <div className="user-image w-25 h-25 absolute -bottom-15 -left-15  z-20 rounded-full flex justify-center items-center">
-                <img src={userImage1} alt="user image" className="object-cover w-auto h-auto" />
+                <img src={userImage1} data-aos="zoom-in" alt="user image" className="object-cover w-auto h-auto " />
         </div>
       </div>
     </div>

@@ -55,8 +55,8 @@ const PopularCards = () => {
                 />
 
                 {/* Overlay (appears on hover) */}
-                <div className="absolute inset-0 bg-black opacity-15 top-4 z-10"></div>
-                <div className="absolute inset-0 bg-red-700 h-0 group-hover:h-[150px] transition-h duration-300 top-40  z-10"></div>
+                {/* <div className="absolute inset-0 bg-black opacity-15 top-4 z-10"></div>
+                <div className="absolute inset-0 bg-red-700 h-0 group-hover:h-[150px] transition-h duration-300 top-40  z-10"></div> */}
               </div>
 
               {/* Content */}
@@ -77,8 +77,8 @@ const PopularCards = () => {
                 />
 
                 {/* Overlay (appears on hover) */}
-                <div className="absolute inset-0 bg-black opacity-15 top-4 z-10"></div>
-                <div className="absolute inset-0 bg-red-700 h-0 group-hover:h-[150px] transition-h duration-300 top-40  z-10"></div>
+                {/* <div className="absolute inset-0 bg-black opacity-15 top-4 z-10"></div>
+                <div className="absolute inset-0 bg-red-700 h-0 group-hover:h-[150px] transition-h duration-300 top-40  z-10"></div> */}
               </div>
 
               {/* Content */}
@@ -99,8 +99,8 @@ const PopularCards = () => {
                 />
 
                 {/* Overlay (appears on hover) */}
-                <div className="absolute inset-0 bg-black opacity-15 top-4 z-10"></div>
-                <div className="absolute inset-0 bg-red-700 h-0 group-hover:h-[150px] transition-h duration-300 top-40  z-10"></div>
+                {/* <div className="absolute inset-0 bg-black opacity-15 top-4 z-10"></div>
+                <div className="absolute inset-0 bg-red-700 h-0 group-hover:h-[150px] transition-h duration-300 top-40  z-10"></div> */}
               </div>
 
               {/* Content */}
@@ -121,8 +121,8 @@ const PopularCards = () => {
                 />
 
                 {/* Overlay (appears on hover) */}
-                <div className="absolute inset-0 bg-black opacity-15 top-4 z-10"></div>
-                <div className="absolute inset-0 bg-red-700 h-0 group-hover:h-[150px] transition-h duration-300 top-40  z-10"></div>
+                {/* <div className="absolute inset-0 bg-black opacity-15 top-4 z-10"></div>
+                <div className="absolute inset-0 bg-red-700 h-0 group-hover:h-[150px] transition-h duration-300 top-40  z-10"></div> */}
               </div>
 
               {/* Content */}
@@ -139,7 +139,7 @@ const PopularCards = () => {
         <>
           {popular_card_data.map(
             ({ card_image, card_title, card_description }) => (
-              <div className="popular-card w-[300px] h-[320px] rounded-lg overflow-hidden relative font-['Jost']">
+              <div key={card_title} className="popular-card w-[300px] h-[320px] rounded-lg overflow-hidden relative font-['Jost']">
                 {/* Image Container */}
 
                 <img
@@ -149,11 +149,11 @@ const PopularCards = () => {
                 />
 
                 {/* Content */}
-                <div className="absolute bottom-0 z-20 flex flex-col justify-end w-full h-[120px] text-white">
+                <div className="absolute bottom-0 z-20 flex flex-col justify-end hover:animate-fade-in-background-color w-full h-[120px] text-white">
                   <div className="relative w-full h-full p-6">
                     {/* Overlay (appears on hover) */}
-                    <div className="absolute bg-black bottom-0 left-0 z-10"></div>
-                    <div className="absolute bg-red-700 h-0 hover:h-[150px] transition-h duration-300 bottom-0 left-0 z-10"></div>
+                    {/* <div className="absolute bg-black bottom-0 left-0 z-10"></div>
+                    <div className="absolute bg-red-700 h-0 hover:h-[150px] transition-h duration-300 bottom-0 left-0 z-10"></div> */}
 
                     <h3 className="text-lg font-bold">{card_title}</h3>
                     <p className="text-sm">{card_description}</p>

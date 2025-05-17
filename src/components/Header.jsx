@@ -3,6 +3,8 @@ import { Link } from "react-router";
 import { FiShoppingCart } from "react-icons/fi";
 import { IoSearchSharp } from "react-icons/io5";
 import { FiMenu } from "react-icons/fi";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(true);
@@ -16,8 +18,15 @@ const Header = () => {
     }
   }, []);
 
+  useEffect(() => {
+  AOS.init({
+    duration: 1000,
+    once: true, // Only animate once
+  });
+}, []);
+
   return (
-    <header className="w-full h-auto max-md:pt-5 max-md:py-0 py-8 font-['Jost']">
+    <header data-aos="fade-down" className="w-full  h-auto max-md:pt-5 max-md:py-0 py-8 font-['Jost']">
       <div className="w-[80%] mx-auto max-lg:w-full max-lg:px-3  h-auto flex justify-between items-center ">
         {/* Logo */}
         <div className="logo ">

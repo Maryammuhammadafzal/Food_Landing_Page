@@ -14,3 +14,103 @@
 .carousel-root .carousel-slider {
         display: block;
 }
+
+@theme {
+  --animate-fade-in-up: fade-in-up 0.8s ease-out;
+  @keyframes fade-in-up {
+    0% {
+      opacity: 0;
+      transform: translateY(-500px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+   --animate-fade-in-bottom: fade-in-bottom 0.8s ease-out;
+  @keyframes fade-in-bottom {
+    0% {
+      opacity: 0;
+      transform: translateY(500px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+   --animate-fade-in-left: fade-in-left 1.5s ease-out;
+  @keyframes fade-in-left {
+    0% {
+      opacity: 0;
+      transform: translateX(-500px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+   --animate-fade-in-right: fade-in-right 1.5s ease-out;
+  @keyframes fade-in-right {
+    0% {
+      opacity: 0;
+      transform: translateX(500px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+   --animate-fade-in-both: fade-in-both 1.5s ease-out;
+  @keyframes fade-in-both {
+    0% {
+      opacity: 0;
+      transform: translateX(50px) translateY(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0px) translateX(0px);
+    }
+  }
+   --animate-fade-in-shadow: fade-in-shadow 0.3s ease-out forwards;
+  @keyframes fade-in-shadow {
+    0% {
+      /* opacity: 0; */
+     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+      transform: scale(1);
+    }
+    100% {
+      /* opacity: 0.9; */
+      box-shadow: none;
+      transform: scale(0.97);
+    }
+  }
+   --animate-fade-in-zoom: fade-in-zoom 1.5s ease-out forwards;
+  @keyframes fade-in-zoom {
+    0% {
+      opacity: 0;
+      transform: scale(0.3);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+   --animate-fade-in-background-color: fade-in-backgroud-color 0.2s ease-out forwards;
+  @keyframes fade-in-backgroud-color {
+    0% {
+      opacity: 0;
+      height: 0;
+      background-color: "transparent";
+    }
+    100% {
+      opacity: 1;
+      height : 120px;
+      background-color: rgb(132, 21, 21);
+    }
+  }
+ 
+}
+/* @theme {
+ 
+ 
+} */

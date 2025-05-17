@@ -1,11 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router";
 import MenuImage1 from "../assets/menu-image1.png";
 import MenuImage2 from "../assets/menu-image2.png";
 import MenuImage3 from "../assets/menu-image3.png";
 import MenuImage4 from "../assets/menu-image4.png";
 import MenuImage5 from "../assets/menu-image5.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
 const MenuCard = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true, // Only animate once
+    });
+  }, []);
   let menu_data = [
     {
       menuImage: MenuImage1,
@@ -80,8 +88,12 @@ const MenuCard = () => {
       </div>
       <div className="body w-full h-auto flex justify-center p-2 items-center">
         <ul className="w-full h-auto flex flex-wrap justify-center gap-3 items-center">
-          {menu_data.map(({ menuImage, menuDescription, menuTitle }) => (
-            <li className="w-[40%] h-[70px]  flex gap-2 items-center justify-start max-[1190px]:w-[48%] max-sm:w-[393px]">
+          {menu_data.map(({ menuImage, menuDescription, menuTitle } , index) => (
+            <li
+            key={index}
+              data-aos="fade-left"
+              className="w-[40%] h-[70px]  flex gap-2 items-center justify-start max-[1190px]:w-[48%] max-sm:w-[393px]"
+            >
               <div className="image h-12 w-12 max-md:h-10 max-md:w-10">
                 <img
                   src={menuImage}

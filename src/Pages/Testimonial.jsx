@@ -1,15 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Button from "../components/Button";
 import TestimonialCard from "../components/TestimonialCard";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Testimonial = () => {
+  useEffect(() => {
+  AOS.init({
+    duration: 1000,
+    once: true, // Only animate once
+  });
+}, []);
   return (
-    <div className="w-full h-screen max-xl:h-auto max-xl:py-3 flex items-center text-white">
+    <div className="w-full h-auto max-xl:py-3 flex items-center text-white">
       <div className="w-full  h-auto  max-md:h-auto bg-image">
 
         <div className="content w-full p-5 max-md:gap-8 flex max-md:flex-col justify-between items-center h-full">
         {/* Content */}
-          <div className="rightContent flex max-md:w-full max-md:p-0 max-md:items-center justify-start items-start w-[50%] pl-12 flex-col">
+          <div data-aos="fade-right" className="rightContent flex  max-md:w-full max-md:p-0 max-md:items-center justify-start items-start w-[50%] pl-12 flex-col">
             <h4 className="text-white text-xl pl-3 font-semibold capitalize">Customer Testimonials 😍</h4>
             <h1 className="text-5xl font-medium max-lg:text-5xl max-md:text-5xl max-sm:text-3xl  max-md:text-center font-['Lobster'] my-7 ">
               What Our Customers Say

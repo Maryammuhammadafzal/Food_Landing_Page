@@ -8,7 +8,7 @@ const News = () => {
     <div className="w-full h-auto  py-8 font-['Jost'] overflow-hidden">
       <div className="w-[80%] mx-auto max-lg:w-full max-lg:px-3  h-auto flex flex-col justify-between items-center">
         {/* Heading */}
-        <div className=";-heading flex w-full text-center justify-center items-center flex-col">
+        <div className="heading flex w-full text-center justify-center items-center flex-col">
           <SubHeading text="Latest Food News" />
           <Heading text="Stay Updated with the Latest Food Trends & News" />
         </div>

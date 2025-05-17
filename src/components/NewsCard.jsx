@@ -147,13 +147,13 @@ const NewsCard = () => {
         <>
           {popular_card_data.map(
             ({ card_image, card_title, card_description }) => (
-              <div className=" w-auto h-auto relative font-['Jost']">
+              <div key={card_title} className="w-auto h-auto relative font-['Jost'] hover:animate-fade-in-shadow shadow-2xl">
                 {/* Image Container */}
 
                 <img
                   src={card_image}
                   alt="card"
-                  className="w-auto h-[400px] bg-transparent shadow-2xl object-cover rounded-2xl"
+                  className="w-auto h-[400px] bg-transparent  object-cover rounded-2xl"
                 />
                 {/* Content */}
                 <div className="flex flex-col h-[210px] absolute -bottom-7 p-6 bg-white text-white">

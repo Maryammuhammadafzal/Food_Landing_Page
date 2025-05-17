@@ -1,9 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "../popular.css";
 import { MdFastfood } from "react-icons/md";
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const AboutCard = () => {
+  useEffect(() => {
+  AOS.init({
+    duration: 1000,
+    once: true, // Only animate once
+  });
+}, []);
   const about_card_data = [
     {
       card_title: "Super Quality Food",
@@ -28,10 +35,10 @@ const AboutCard = () => {
   ];
   return (
     <>
-      {about_card_data.map(({ card_title, card_description }) => (
-        <div className="popular-card  w-[280px] max-md:w-[220px] max-sm:w-[160px] py-3 h-auto flex gap-4 max-sm:gap-1 font-['Jost']">
+      {about_card_data.map(({ card_title, card_description } , index) => (
+        <div key={index} className="popular-card  w-[280px] max-md:w-[220px] max-sm:w-[160px] py-3 h-auto flex gap-4 max-sm:gap-1 font-['Jost']">
          
-                 <MdFastfood  size={60} className="text-orange-500 max-md:w-[40px] max-sm:w-[30px]" />
+                 <MdFastfood data-aos="zoom-in" size={60} className="text-orange-500  max-md:w-[40px] max-sm:w-[30px]" />
          
 
           {/* Content */}
